@@ -1,0 +1,1940 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_593e7f6daaad8fb9d6c6502ea1444b42 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+             <h3 align="center" style="font-size:20px"><b>Distribution of Players by Nation</b></h3>
+             
+    
+            <div class="folium-map" id="map_593e7f6daaad8fb9d6c6502ea1444b42" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_593e7f6daaad8fb9d6c6502ea1444b42 = L.map(
+                "map_593e7f6daaad8fb9d6c6502ea1444b42",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_69aaeb5c95d5dc1d3b2e6db9af03bbc7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            var marker_515f58f4cd23d48dec43cd545d9de64c = L.marker(
+                [39.3260685, -4.8379791],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_515f58f4cd23d48dec43cd545d9de64c.bindTooltip(
+                `<div>
+                     Spain: 778 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b74f88a72802bfcbc704927e6973ecc2 = L.marker(
+                [52.3555, -1.1743],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_b74f88a72802bfcbc704927e6973ecc2.bindTooltip(
+                `<div>
+                     England: 707 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21de32be78ad3e08e7fdc07cdd08d442 = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_21de32be78ad3e08e7fdc07cdd08d442.bindTooltip(
+                `<div>
+                     France: 692 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1145ad2e99a4bbbfba85a108df77ea7e = L.marker(
+                [-34.9964963, -64.9672817],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_1145ad2e99a4bbbfba85a108df77ea7e.bindTooltip(
+                `<div>
+                     Argentina: 651 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22d1d9f5a600dabe1774b8028fbd2dc8 = L.marker(
+                [51.1638175, 10.4478313],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_22d1d9f5a600dabe1774b8028fbd2dc8.bindTooltip(
+                `<div>
+                     Germany: 578 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db5b0bd7fd32b2be9e90c15915569776 = L.marker(
+                [-10.3333333, -53.2],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_db5b0bd7fd32b2be9e90c15915569776.bindTooltip(
+                `<div>
+                     Brazil: 467 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82c9e96fec0966a4052984def5689c7c = L.marker(
+                [42.6384261, 12.674297],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_82c9e96fec0966a4052984def5689c7c.bindTooltip(
+                `<div>
+                     Italy: 440 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7355f7e29808d9be82e67edfb50f7912 = L.marker(
+                [39.6621648, -8.1353519],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_7355f7e29808d9be82e67edfb50f7912.bindTooltip(
+                `<div>
+                     Portugal: 370 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea0da7f0073b427aeba2ea18d301a0eb = L.marker(
+                [52.2434979, 5.6343227],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_ea0da7f0073b427aeba2ea18d301a0eb.bindTooltip(
+                `<div>
+                     Netherlands: 341 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9d438b25718f346f4c7f7391a39a558 = L.marker(
+                [50.6402809, 4.6667145],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_d9d438b25718f346f4c7f7391a39a558.bindTooltip(
+                `<div>
+                     Belgium: 219 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_779f13eade21d9b3a8f622e570ff9966 = L.marker(
+                [55.670249, 10.3333283],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_779f13eade21d9b3a8f622e570ff9966.bindTooltip(
+                `<div>
+                     Denmark: 194 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9252cfff64789a647a46f890bf9e4f1 = L.marker(
+                [-32.8755548, -56.0201525],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_e9252cfff64789a647a46f890bf9e4f1.bindTooltip(
+                `<div>
+                     Uruguay: 184 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47c3d162aff944bc9a840bcf9081e354 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_47c3d162aff944bc9a840bcf9081e354.bindTooltip(
+                `<div>
+                     United States: 180 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ccca9d5d0bb609df1b61490db303778 = L.marker(
+                [4.099917, -72.9088133],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_6ccca9d5d0bb609df1b61490db303778.bindTooltip(
+                `<div>
+                     Colombia: 172 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc40b19dc631253ab222bae45b918409 = L.marker(
+                [45.3658443, 15.6575209],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_bc40b19dc631253ab222bae45b918409.bindTooltip(
+                `<div>
+                     Croatia: 160 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33e98896f675e14758541322ac53af4b = L.marker(
+                [52.215933, 19.134422],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_33e98896f675e14758541322ac53af4b.bindTooltip(
+                `<div>
+                     Poland: 143 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd4c04699061864c3952e7946d792051 = L.marker(
+                [47.59397, 14.12456],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_bd4c04699061864c3952e7946d792051.bindTooltip(
+                `<div>
+                     Austria: 130 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af74b47470ac9b58bcea82559ddf0a7a = L.marker(
+                [35.9078, 127.7669],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_af74b47470ac9b58bcea82559ddf0a7a.bindTooltip(
+                `<div>
+                     Korea Republic: 129 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9407c23cecf576cd9dbe4c76fed037bb = L.marker(
+                [46.7985624, 8.2319736],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_9407c23cecf576cd9dbe4c76fed037bb.bindTooltip(
+                `<div>
+                     Switzerland: 125 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2874e9dbe2f5b2bf8e055775e88fc4a = L.marker(
+                [59.6749712, 14.5208584],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_f2874e9dbe2f5b2bf8e055775e88fc4a.bindTooltip(
+                `<div>
+                     Sweden: 124 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78e4a2a1bbb333f97f94c539a0d4bca6 = L.marker(
+                [8.0300284, -1.0800271],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_78e4a2a1bbb333f97f94c539a0d4bca6.bindTooltip(
+                `<div>
+                     Ghana: 122 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7edd7526c5123866ea82149ab025bd5 = L.marker(
+                [36.5748441, 139.2394179],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_c7edd7526c5123866ea82149ab025bd5.bindTooltip(
+                `<div>
+                     Japan: 114 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57762ccb62da3851d662dcf92a0749c2 = L.marker(
+                [31.1728205, -7.3362482],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_57762ccb62da3851d662dcf92a0749c2.bindTooltip(
+                `<div>
+                     Morocco: 112 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9d3743c24fefe4548188a76e2b787c6 = L.marker(
+                [61.1529386, 8.7876653],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_d9d3743c24fefe4548188a76e2b787c6.bindTooltip(
+                `<div>
+                     Norway: 110 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fee67fd057dde29201c3521267dc852d = L.marker(
+                [-1.3397668, -79.3666965],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_fee67fd057dde29201c3521267dc852d.bindTooltip(
+                `<div>
+                     Ecuador: 109 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_766cc9fbf61453d15c48a441dd42cb88 = L.marker(
+                [14.4750607, -14.4529612],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_766cc9fbf61453d15c48a441dd42cb88.bindTooltip(
+                `<div>
+                     Senegal: 109 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d28048298798d2913d6fd2f213fc252 = L.marker(
+                [-24.7761086, 134.755],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_7d28048298798d2913d6fd2f213fc252.bindTooltip(
+                `<div>
+                     Australia: 107 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e93ccb23890e865b2171d5e98538d82c = L.marker(
+                [44.1534121, 20.55144],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_e93ccb23890e865b2171d5e98538d82c.bindTooltip(
+                `<div>
+                     Serbia: 105 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e42638fe154551141437b3be2c6854f = L.marker(
+                [38.9597594, 34.9249653],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_4e42638fe154551141437b3be2c6854f.bindTooltip(
+                `<div>
+                     Turkey: 104 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fe009615196eb15b03e3bb09cf621d7 = L.marker(
+                [56.4907, -4.2026],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_8fe009615196eb15b03e3bb09cf621d7.bindTooltip(
+                `<div>
+                     Scotland: 99 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4dbefe59d7d3f0d2a64838e352baa53 = L.marker(
+                [9.6000359, 7.9999721],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_d4dbefe59d7d3f0d2a64838e352baa53.bindTooltip(
+                `<div>
+                     Nigeria: 95 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87b445a730976508b9d18743e2da686b = L.marker(
+                [7.9897371, -5.5679458],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_87b445a730976508b9d18743e2da686b.bindTooltip(
+                `<div>
+                     Ivory Coast: 88 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1148d6c01253d1dd66b79e3a9b4c8bab = L.marker(
+                [45.9852129, 24.6859225],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_1148d6c01253d1dd66b79e3a9b4c8bab.bindTooltip(
+                `<div>
+                     Romania: 85 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64fdcc379a534322836339065d12e60a = L.marker(
+                [4.6125522, 13.1535811],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_64fdcc379a534322836339065d12e60a.bindTooltip(
+                `<div>
+                     Cameroon: 84 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4e3bf7b47ff23f9712d1f2b7accad9c = L.marker(
+                [52.1307, -3.7837],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_b4e3bf7b47ff23f9712d1f2b7accad9c.bindTooltip(
+                `<div>
+                     Wales: 84 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0728fc36d3d945fa43aafe58ad7c559 = L.marker(
+                [23.6585116, -102.0077097],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_d0728fc36d3d945fa43aafe58ad7c559.bindTooltip(
+                `<div>
+                     Mexico: 81 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a8b4f87a0c7f8e03e25ca36ff9d712c = L.marker(
+                [25.6242618, 42.3528328],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_4a8b4f87a0c7f8e03e25ca36ff9d712c.bindTooltip(
+                `<div>
+                     Saudi Arabia: 79 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0c7d5723037411507bb42a55663b6ab = L.marker(
+                [61.0666922, -107.991707],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_c0c7d5723037411507bb42a55663b6ab.bindTooltip(
+                `<div>
+                     Canada: 72 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bce0d22cd538f4b7ddd8c3c27c7efb06 = L.marker(
+                [49.7439047, 15.3381061],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_bce0d22cd538f4b7ddd8c3c27c7efb06.bindTooltip(
+                `<div>
+                     Czech Republic: 72 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7314583ed348ad268de0bad5e6670cb8 = L.marker(
+                [-23.3165935, -58.1693445],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_7314583ed348ad268de0bad5e6670cb8.bindTooltip(
+                `<div>
+                     Paraguay: 71 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0d001d058ce2473bd9204927f731423 = L.marker(
+                [53.1424, -7.6921],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_e0d001d058ce2473bd9204927f731423.bindTooltip(
+                `<div>
+                     Republic of Ireland: 66 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6beb4178fb1ef8702312a86b6dd308b = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_d6beb4178fb1ef8702312a86b6dd308b.bindTooltip(
+                `<div>
+                     Ukraine: 57 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a86bf1c6199fdd4bcdf968e39e3e58d = L.marker(
+                [32.6475314, 54.5643516],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_2a86bf1c6199fdd4bcdf968e39e3e58d.bindTooltip(
+                `<div>
+                     Iran: 54 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67047a43757a1d74be8a05530c685a31 = L.marker(
+                [38.9953683, 21.9877132],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_67047a43757a1d74be8a05530c685a31.bindTooltip(
+                `<div>
+                     Greece: 53 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22e30339794cc591d6f11504a669c0cd = L.marker(
+                [-31.7613365, -71.3187697],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_22e30339794cc591d6f11504a669c0cd.bindTooltip(
+                `<div>
+                     Chile: 53 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0888e9dded4e0c36d2e64a0be39559c = L.marker(
+                [28.0000272, 2.9999825],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_a0888e9dded4e0c36d2e64a0be39559c.bindTooltip(
+                `<div>
+                     Algeria: 51 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6aaac47ac7d3523b57567083d1d3b38 = L.marker(
+                [33.8439408, 9.400138],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_f6aaac47ac7d3523b57567083d1d3b38.bindTooltip(
+                `<div>
+                     Tunisia: 50 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc2402d6ba097653e0655bacd8d804c0 = L.marker(
+                [43.9159, 17.6791],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_dc2402d6ba097653e0655bacd8d804c0.bindTooltip(
+                `<div>
+                     Bosnia Herzegovina: 48 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a553c1e1c1017b684af00c97bfa79607 = L.marker(
+                [-6.8699697, -75.0458515],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_a553c1e1c1017b684af00c97bfa79607.bindTooltip(
+                `<div>
+                     Peru: 46 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2629107bb1d1eed6212931990810f17 = L.marker(
+                [16.3700359, -2.2900239],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_d2629107bb1d1eed6212931990810f17.bindTooltip(
+                `<div>
+                     Mali: 41 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6354815061c26e0494c7bf2b1c8081b8 = L.marker(
+                [10.2735633, -84.0739102],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_6354815061c26e0494c7bf2b1c8081b8.bindTooltip(
+                `<div>
+                     Costa Rica: 38 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_891073fd235bee3de39f8a17018e6e41 = L.marker(
+                [-4.0383, 21.7587],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_891073fd235bee3de39f8a17018e6e41.bindTooltip(
+                `<div>
+                     DR Congo: 37 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ceb8b42420a61ff9e382f71d9ae4174 = L.marker(
+                [-28.8166236, 24.991639],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_5ceb8b42420a61ff9e382f71d9ae4174.bindTooltip(
+                `<div>
+                     South Africa: 36 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11af67cb47f907c7cdac14b0395ccba3 = L.marker(
+                [8.0018709, -66.1109318],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_11af67cb47f907c7cdac14b0395ccba3.bindTooltip(
+                `<div>
+                     Venezuela: 31 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ccb56fab936021de28713dd4d857731 = L.marker(
+                [48.7411522, 19.4528646],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_0ccb56fab936021de28713dd4d857731.bindTooltip(
+                `<div>
+                     Slovakia: 28 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce10e6c94be3255aa69fedfe0bda1e72 = L.marker(
+                [46.1199444, 14.8153333],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_ce10e6c94be3255aa69fedfe0bda1e72.bindTooltip(
+                `<div>
+                     Slovenia: 28 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebee33c91d7bfa9d3bc20e971e778286 = L.marker(
+                [42.6026, 20.9029],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_ebee33c91d7bfa9d3bc20e971e778286.bindTooltip(
+                `<div>
+                     Kosovo: 27 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9515617373a673706a26baeb574df620 = L.marker(
+                [25.3336984, 51.2295295],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_9515617373a673706a26baeb574df620.bindTooltip(
+                `<div>
+                     Qatar: 26 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6aeaebdd436ac8cb46d7642f8d3632ce = L.marker(
+                [47.1817585, 19.5060937],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_6aeaebdd436ac8cb46d7642f8d3632ce.bindTooltip(
+                `<div>
+                     Hungary: 26 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bacd92a2974fdac47bb7f3e3fbe8853 = L.marker(
+                [41.000028, 19.9999619],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_6bacd92a2974fdac47bb7f3e3fbe8853.bindTooltip(
+                `<div>
+                     Albania: 25 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_417c14263bbd100c57ddb8fc6f55e284 = L.marker(
+                [18.1850507, -77.3947693],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_417c14263bbd100c57ddb8fc6f55e284.bindTooltip(
+                `<div>
+                     Jamaica: 24 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bcf459ca538e672c83a6a0e4dc355ac2 = L.marker(
+                [32.3293809, -83.1137366],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_bcf459ca538e672c83a6a0e4dc355ac2.bindTooltip(
+                `<div>
+                     Georgia: 24 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f73a47ee9c4d2a4537067b4f9f3293e7 = L.marker(
+                [35.8617, 104.1954],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_f73a47ee9c4d2a4537067b4f9f3293e7.bindTooltip(
+                `<div>
+                     China PR: 24 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcb6f42b98e88de2f66a32ebdac3c3ee = L.marker(
+                [64.9841821, -18.1059013],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_dcb6f42b98e88de2f66a32ebdac3c3ee.bindTooltip(
+                `<div>
+                     Iceland: 20 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49072ccf08b6535a7f5024637c5874f5 = L.marker(
+                [10.7226226, -10.7083587],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_49072ccf08b6535a7f5024637c5874f5.bindTooltip(
+                `<div>
+                     Guinea: 19 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_295885c75967e51fe938a631d2a85d9f = L.marker(
+                [54.7877, -6.4923],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_295885c75967e51fe938a631d2a85d9f.bindTooltip(
+                `<div>
+                     Northern Ireland: 19 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8422748a89887d24c7284a472541b14c = L.marker(
+                [63.2467777, 25.9209164],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_8422748a89887d24c7284a472541b14c.bindTooltip(
+                `<div>
+                     Finland: 18 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7753b56aecbea9ed816cc4a349a1f8a = L.marker(
+                [13.470062, -15.4900464],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_f7753b56aecbea9ed816cc4a349a1f8a.bindTooltip(
+                `<div>
+                     Gambia: 16 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e99ae58eefc14f90b088ce3a9017dfb = L.marker(
+                [26.2540493, 29.2675469],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_0e99ae58eefc14f90b088ce3a9017dfb.bindTooltip(
+                `<div>
+                     Egypt: 16 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1d3666d2ec6c4c362e1b6ddeb0fdf25 = L.marker(
+                [15.1201, -23.6052],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_f1d3666d2ec6c4c362e1b6ddeb0fdf25.bindTooltip(
+                `<div>
+                     Cape Verde Islands: 15 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa523e960115c8038acb916e7b71b8ae = L.marker(
+                [-0.8999695, 11.6899699],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_fa523e960115c8038acb916e7b71b8ae.bindTooltip(
+                `<div>
+                     Gabon: 14 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a57dea2cfbb0d3462a1423c900b300e0 = L.marker(
+                [41.6086, 21.7453],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_a57dea2cfbb0d3462a1423c900b300e0.bindTooltip(
+                `<div>
+                     FYR Macedonia: 13 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ac3982446428554a9063bafb61e722f = L.marker(
+                [12.0753083, -1.6880314],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_9ac3982446428554a9063bafb61e722f.bindTooltip(
+                `<div>
+                     Burkina Faso: 13 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_addcc5404e4225b420c8990be1cf449e = L.marker(
+                [42.9868853, 19.5180992],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_addcc5404e4225b420c8990be1cf449e.bindTooltip(
+                `<div>
+                     Montenegro: 13 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7e50292786b6c1de7df2baa12c83afa = L.marker(
+                [11.815215, -15.2351044],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_f7e50292786b6c1de7df2baa12c83afa.bindTooltip(
+                `<div>
+                     Guinea-Bissau: 13 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_580ed257393dbabea82cf34c09193edb = L.marker(
+                [-11.8775768, 17.5691241],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_580ed257393dbabea82cf34c09193edb.bindTooltip(
+                `<div>
+                     Angola: 11 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0053c63236def221f358d7d9970db8a = L.marker(
+                [-17.0568696, -64.9912286],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_e0053c63236def221f358d7d9970db8a.bindTooltip(
+                `<div>
+                     Bolivia: 11 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a0db4c57d553268ffe26206942224d9 = L.marker(
+                [-18.4554963, 29.7468414],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_9a0db4c57d553268ffe26206942224d9.bindTooltip(
+                `<div>
+                     Zimbabwe: 10 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0a29d0d2a7d1e745f7f9de78cc10aca = L.marker(
+                [42.6073975, 25.4856617],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_d0a29d0d2a7d1e745f7f9de78cc10aca.bindTooltip(
+                `<div>
+                     Bulgaria: 10 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81af42bf3c5ca2bb86ead8d3b67026ee = L.marker(
+                [15.2572432, -86.0755145],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_81af42bf3c5ca2bb86ead8d3b67026ee.bindTooltip(
+                `<div>
+                     Honduras: 9 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6431355d70d0f662a4a84a9bef9a9246 = L.marker(
+                [64.6863136, 97.7453061],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_6431355d70d0f662a4a84a9bef9a9246.bindTooltip(
+                `<div>
+                     Russia: 9 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89204b32d903fb5d391ea9d464332ca3 = L.marker(
+                [8.7800265, 1.0199765],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_89204b32d903fb5d391ea9d464332ca3.bindTooltip(
+                `<div>
+                     Togo: 9 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c10275547fcfe925504449fd84d6e04 = L.marker(
+                [4.1413025, -56.0771187],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_4c10275547fcfe925504449fd84d6e04.bindTooltip(
+                `<div>
+                     Suriname: 9 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68fed4ca1977c0df70e819e3a67f3846 = L.marker(
+                [9.5293472, 2.2584408],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_68fed4ca1977c0df70e819e3a67f3846.bindTooltip(
+                `<div>
+                     Benin: 8 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_788d87afc0898927539557d640e95073 = L.marker(
+                [30.8124247, 34.8594762],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_788d87afc0898927539557d640e95073.bindTooltip(
+                `<div>
+                     Israel: 8 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a57626f1b26d0aa51f02d369ab27951 = L.marker(
+                [8.6400349, -11.8400269],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_8a57626f1b26d0aa51f02d369ab27951.bindTooltip(
+                `<div>
+                     Sierra Leone: 7 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e92e05c919ca62d7fd88db5d91dbe0f9 = L.marker(
+                [-41.5000831, 172.8344077],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_e92e05c919ca62d7fd88db5d91dbe0f9.bindTooltip(
+                `<div>
+                     New Zealand: 7 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_896978bd7764318d4ec41d254995a9bc = L.marker(
+                [49.8153, 6.1296],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_896978bd7764318d4ec41d254995a9bc.bindTooltip(
+                `<div>
+                     Luxemburg: 7 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_887d17710c6985a8d403b95f2f14a324 = L.marker(
+                [-2.9814344, 23.8222636],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_887d17710c6985a8d403b95f2f14a324.bindTooltip(
+                `<div>
+                     Congo: 7 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_185e8f42408f11dcea6c3c975557522b = L.marker(
+                [8.559559, -81.1308434],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_185e8f42408f11dcea6c3c975557522b.bindTooltip(
+                `<div>
+                     Panama: 7 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b10f64613f7f914103553b1e95290d13 = L.marker(
+                [40.7696272, 44.6736646],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_b10f64613f7f914103553b1e95290d13.bindTooltip(
+                `<div>
+                     Armenia: 6 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b50e7fed073813d159c83605f7a989f = L.marker(
+                [-14.5189121, 27.5589884],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_4b50e7fed073813d159c83605f7a989f.bindTooltip(
+                `<div>
+                     Zambia: 6 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae4a55a79f789a4d4c09a7c4dc183bad = L.marker(
+                [24.0002488, 53.9994829],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_ae4a55a79f789a4d4c09a7c4dc183bad.bindTooltip(
+                `<div>
+                     United Arab Emirates: 5 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b81445df9b3565583847617d026ff6d8 = L.marker(
+                [-19.302233, 34.9144977],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_b81445df9b3565583847617d026ff6d8.bindTooltip(
+                `<div>
+                     Mozambique: 5 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a122430df7ee9841afd629577ac10497 = L.marker(
+                [1.4419683, 38.4313975],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_a122430df7ee9841afd629577ac10497.bindTooltip(
+                `<div>
+                     Kenya: 4 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b6cf097bb678f68c71f644e51d5624a = L.marker(
+                [34.9823018, 33.1451285],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_1b6cf097bb678f68c71f644e51d5624a.bindTooltip(
+                `<div>
+                     Cyprus: 4 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bf005e62ea6e4554f52f40b19277cbe = L.marker(
+                [47.2879608, 28.5670941],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_4bf005e62ea6e4554f52f40b19277cbe.bindTooltip(
+                `<div>
+                     Moldova: 4 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e546f155c9bd6992a3692d39d9a35e60 = L.marker(
+                [-18.9249604, 46.4416422],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_e546f155c9bd6992a3692d39d9a35e60.bindTooltip(
+                `<div>
+                     Madagascar: 4 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_364a7c19cc11c140a40a399957588f1b = L.marker(
+                [41.32373, 63.9528098],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_364a7c19cc11c140a40a399957588f1b.bindTooltip(
+                `<div>
+                     Uzbekistan: 4 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7327a709963d6ca68876ed1ab9fedae1 = L.marker(
+                [12.2019, -68.2624],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_7327a709963d6ca68876ed1ab9fedae1.bindTooltip(
+                `<div>
+                     Netherlands Antilles: 4 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27121011420b9e868256e8cb399c6838 = L.marker(
+                [1.613172, 10.5170357],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_27121011420b9e868256e8cb399c6838.bindTooltip(
+                `<div>
+                     Equatorial Guinea: 3 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a24f61352fc5bd2bf44e1233d0eeb57 = L.marker(
+                [12.7503486, 122.7312101],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_4a24f61352fc5bd2bf44e1233d0eeb57.bindTooltip(
+                `<div>
+                     Philippines: 3 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f3e5679b444c129dc103b1200a89169 = L.marker(
+                [33.0955793, 44.1749775],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_4f3e5679b444c129dc103b1200a89169.bindTooltip(
+                `<div>
+                     Iraq: 3 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_586b383dd336c3fa325fafbb08fed7b7 = L.marker(
+                [-12.2045176, 44.2832964],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_586b383dd336c3fa325fafbb08fed7b7.bindTooltip(
+                `<div>
+                     Comoros: 3 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_314405b0084c12626f2ffef7126de9b4 = L.marker(
+                [-23.2335499, 17.3231107],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_314405b0084c12626f2ffef7126de9b4.bindTooltip(
+                `<div>
+                     Namibia: 3 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13a82226c90dd00bf844333122b67cdb = L.marker(
+                [10.6918, -61.2225],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_13a82226c90dd00bf844333122b67cdb.bindTooltip(
+                `<div>
+                     Trinidad & Tobago: 3 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39bf9e8303b36e6ecb3769e95fabd9a4 = L.marker(
+                [13.8000382, -88.9140683],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_39bf9e8303b36e6ecb3769e95fabd9a4.bindTooltip(
+                `<div>
+                     El Salvador: 3 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_607c8fcf064091f4de99910bb3adf5f8 = L.marker(
+                [12.1360374, -61.6904045],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_607c8fcf064091f4de99910bb3adf5f8.bindTooltip(
+                `<div>
+                     Grenada: 3 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6d8bcd28f8b852b7105432a0eba770c = L.marker(
+                [23.0131338, -80.8328748],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_c6d8bcd28f8b852b7105432a0eba770c.bindTooltip(
+                `<div>
+                     Cuba: 2 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4c3772c8758c3da6fff0b0c8e51fe6a = L.marker(
+                [19.1399952, -72.3570972],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_b4c3772c8758c3da6fff0b0c8e51fe6a.bindTooltip(
+                `<div>
+                     Haiti: 2 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffe1673be7332e32daf42714d8d4ecd5 = L.marker(
+                [6.6111, 20.9394],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_ffe1673be7332e32daf42714d8d4ecd5.bindTooltip(
+                `<div>
+                     CAR: 2 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b011005cb323de3c46b62bbd82a5558 = L.marker(
+                [40.3936294, 47.7872508],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_1b011005cb323de3c46b62bbd82a5558.bindTooltip(
+                `<div>
+                     Azerbaijan: 2 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_047469411c114d66be71c810cff3d902 = L.marker(
+                [1.5333554, 32.2166578],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_047469411c114d66be71c810cff3d902.bindTooltip(
+                `<div>
+                     Uganda: 2 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ef69201ee5db338191122476e615a84 = L.marker(
+                [56.8406494, 24.7537645],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_1ef69201ee5db338191122476e615a84.bindTooltip(
+                `<div>
+                     Latvia: 2 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a28d0aea5694c12371255484c5bf84ed = L.marker(
+                [-3.426449, 29.9324519],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_a28d0aea5694c12371255484c5bf84ed.bindTooltip(
+                `<div>
+                     Burundi: 2 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09a4cc04e9215de4f785abcc566b04ab = L.marker(
+                [5.7499721, -9.3658524],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_09a4cc04e9215de4f785abcc566b04ab.bindTooltip(
+                `<div>
+                     Liberia: 2 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a4ed65223100204b59f0eaa68bf1686 = L.marker(
+                [26.8234472, 18.1236723],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_1a4ed65223100204b59f0eaa68bf1686.bindTooltip(
+                `<div>
+                     Libya: 2 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77679d0a1fc3f7102a3527903f133b5c = L.marker(
+                [-6.5247123, 35.7878438],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_77679d0a1fc3f7102a3527903f133b5c.bindTooltip(
+                `<div>
+                     Tanzania: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d843a2f507f0d71936af7ef25914227 = L.marker(
+                [22.2793278, 114.1628131],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_3d843a2f507f0d71936af7ef25914227.bindTooltip(
+                `<div>
+                     Hong Kong: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d183199e90ba59b0aa577438b611d323 = L.marker(
+                [17.0608, -61.7964],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_d183199e90ba59b0aa577438b611d323.bindTooltip(
+                `<div>
+                     Antigua & Barbuda: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_298cded984f0287e930af7eedc2e4ee5 = L.marker(
+                [34.6401861, 39.0494106],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_298cded984f0287e930af7eedc2e4ee5.bindTooltip(
+                `<div>
+                     Syria: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c31a25b7cf0b623f972b20b4c19f7c51 = L.marker(
+                [48.1012954, 66.7780818],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_c31a25b7cf0b623f972b20b4c19f7c51.bindTooltip(
+                `<div>
+                     Kazakhstan: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_891ddb788326895bab152506a47480dd = L.marker(
+                [32.30382, -64.7561647],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_891ddb788326895bab152506a47480dd.bindTooltip(
+                `<div>
+                     Bermuda: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d7d9f530306f9764f2665ace2bf4c09 = L.marker(
+                [23.6978, 120.9605],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_6d7d9f530306f9764f2665ace2bf4c09.bindTooltip(
+                `<div>
+                     Chinese Taipei: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe9d60b176c42025bdce16d5f1cd5488 = L.marker(
+                [16.7417041, -62.1916844],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_fe9d60b176c42025bdce16d5f1cd5488.bindTooltip(
+                `<div>
+                     Montserrat: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1006d4a1ea3679330c9e1555afb0c10 = L.marker(
+                [22.3511148, 78.6677428],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_b1006d4a1ea3679330c9e1555afb0c10.bindTooltip(
+                `<div>
+                     India: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_748960b555eab8a6b97d794a0ee9e2ac = L.marker(
+                [35.8885993, 14.4476911],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_748960b555eab8a6b97d794a0ee9e2ac.bindTooltip(
+                `<div>
+                     Malta: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b419943d16267c50b0773af4e17424a = L.marker(
+                [19.0974031, -70.3028026],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_4b419943d16267c50b0773af4e17424a.bindTooltip(
+                `<div>
+                     Dominican Republic: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffd75e0126627acaba3e3fe1f023c5dc = L.marker(
+                [40.3399, 127.5101],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_ffd75e0126627acaba3e3fe1f023c5dc.bindTooltip(
+                `<div>
+                     Korea DPR: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f1c7a4745b04759412663bf7f31d679 = L.marker(
+                [-18.1239696, 179.0122737],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_6f1c7a4745b04759412663bf7f31d679.bindTooltip(
+                `<div>
+                     Fiji: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a3748a1bda9c20bc5fcc97c7e1f02eb = L.marker(
+                [62.0448724, -7.0322972],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_5a3748a1bda9c20bc5fcc97c7e1f02eb.bindTooltip(
+                `<div>
+                     Faroe Islands: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34832d069f9727607fb7e6bcb715efdb = L.marker(
+                [17.3578, -62.7822],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            marker_34832d069f9727607fb7e6bcb715efdb.bindTooltip(
+                `<div>
+                     St Kitts Nevis: 1 card players
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccd28074228dcc1ad65d4f4addc5fae3 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_593e7f6daaad8fb9d6c6502ea1444b42);
+        
+    
+            var icon_d48301a9323a321e505f456bb15c8ad4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ccd28074228dcc1ad65d4f4addc5fae3.setIcon(icon_d48301a9323a321e505f456bb15c8ad4);
+        
+    
+            marker_ccd28074228dcc1ad65d4f4addc5fae3.bindTooltip(
+                `<div>
+                     Distribution of Players by Nation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
